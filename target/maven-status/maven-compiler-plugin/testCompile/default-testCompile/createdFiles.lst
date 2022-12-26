@@ -1,0 +1,4 @@
+RunnerTest\RunnerTest.class
+stepDefinition\keyboardBot.class
+main\java\stepDefinition\makeScreenshots.class
+main\java\stepDefinition\baseClass.class

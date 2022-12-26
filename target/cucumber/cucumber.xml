@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="94.176">
+    <testcase classname="Bot for keyboard" name="Bot begin testing and starting to input words" time="93.772">
+        <system-out>
+            <![CDATA[Given Opening the browser "https://10fastfingers.com/typing-test/russian"...passed
+When input the marked letter................................................passed
+Then check the game is done.................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
