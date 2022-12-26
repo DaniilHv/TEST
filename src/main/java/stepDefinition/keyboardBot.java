@@ -15,11 +15,12 @@ public class keyboardBot extends makeScreenshots {
             driver.manage().window().maximize();
             driver.get("https://10fastfingers.com/typing-test/russian");
             Thread.sleep(2000);
-            WebElement cookies = driver.findElement(By.xpath("//button[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']"));
+            ////button[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']
+            WebElement cookies = driver.findElement(By.xpath(""));
             cookies.click();
 
         } catch (Exception e) {
-            Screenshots();
+            Screenshots("first");
         }
     }
 
@@ -28,10 +29,11 @@ public class keyboardBot extends makeScreenshots {
         System.out.println("Need to wait 13123 minute...");
         while (true) {
             try {
+                //
                 WebElement letter = driver.findElement(By.xpath("//span[@class='highlight']"));
                 String stringWord = letter.getText();
                 ////input[@id='inputfield']
-                WebElement inputField = driver.findElement(By.xpath("//input[@id='inputfield']"));
+                WebElement inputField = driver.findElement(By.xpath(""));
                 inputField.sendKeys(stringWord);
                 inputField.sendKeys(Keys.SPACE);
                 WebElement Timer = driver.findElement(By.xpath("//div[@id='timer']"));
@@ -41,7 +43,7 @@ public class keyboardBot extends makeScreenshots {
                     break;
                 }
             } catch (Exception e) {
-                Screenshots();
+                Screenshots("second");
 
             }
         }
@@ -63,7 +65,7 @@ public class keyboardBot extends makeScreenshots {
             driver.close();
 
         } catch (Exception e) {
-            Screenshots();
+            Screenshots("third");
 
         }
     }
